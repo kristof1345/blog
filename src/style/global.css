@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 720px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+}

@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -8,19 +7,23 @@ import Header from "../components/Header.astro";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="../../src/style/global.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<Header></Header>
 		<slot />
 	</body>
 </html>
 
 <style>
+	html {
+		margin: 0;
+	}
+
 	html,
 	body {
-		margin: 0;
+		/* margin: 0; */
 		width: 100%;
 		height: 100%;
 	}

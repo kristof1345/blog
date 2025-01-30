@@ -3,18 +3,34 @@ const {frontmatter} = Astro.props;
 import Header from "../components/Header.astro";
 ---
 
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <!-- ... -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../../src/style/global.css">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
   </head>
   <!-- ... -->
    <body>
     <Header></Header>
-     <h1>{frontmatter.title}</h1>
-     <h2>Post author: {frontmatter.author}</h2>
-     <p>{frontmatter.description}</p>
-     <slot /> <!-- Markdown content is injected here -->
+
+    <main>
+      <h1>{frontmatter.title}</h1>
+      <!-- <h2>Post author: {frontmatter.author}</h2> -->
+      <!-- <p>{frontmatter.description}</p> -->
+      <slot /> <!-- Markdown content is injected here -->
+    </main>
    </body>
   <!-- ... -->
 </html>
+
+
+<style>
+  main {
+		padding: 0px 10px;
+	}
+</style>
