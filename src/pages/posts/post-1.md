@@ -8,6 +8,8 @@ date: 2025/01/01
 
 This is a post written in Markdown.
 
+This is `code` here.
+
 ```rust
 async fn new(...) {
     // ...
