@@ -2,6 +2,7 @@
 layout: ../../layouts/BlogPostLayout.astro
 title: The gold in your early years
 author: me
+date: 2025/01/03
 ---
 
 Let's be real, most of us already forgot about our childhood years. We forget the things we did, how we did them and why we did them.

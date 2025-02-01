@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
 title: Money spent well
+date: 2025/01/02
 ---
 
 # hey
