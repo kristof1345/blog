@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,6 +12,16 @@ body {
   max-width: 720px;
   margin: auto;
   padding-bottom: 40px;
+}
+
+code {
+  font-family: "JetBrains Mono", serif;
+}
+
+pre {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
