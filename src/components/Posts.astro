@@ -12,16 +12,16 @@ const posts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: tru
   <Header></Header>
 
   <main>
-    <h1>Posts:</h1>
-    <section>
+    <!-- <h1>Posts:</h1> -->
+    <!-- <section> -->
       {posts.map(post => <div class="post-preview">{post.frontmatter.date} - <a href={post.url}>{post.frontmatter.title}</a></div>)}
-    </section>
+    <!-- </section> -->
   </main>
 </div>
 
 <style>
   main {
-		padding: 0px 10px;
+		padding: 15px 10px 0px 10px;
 	}
 
   .post-preview {

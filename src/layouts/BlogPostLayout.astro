@@ -10,9 +10,9 @@ import '../style/global.css';
     <!-- ... -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon-1.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{frontmatter.title}</title>
   </head>
   <!-- ... -->
    <body>
@@ -20,6 +20,7 @@ import '../style/global.css';
 
     <main>
       <h1>{frontmatter.title}</h1>
+      <div>{frontmatter.date}</div>
       <!-- <h2>Post author: {frontmatter.author}</h2> -->
       <!-- <p>{frontmatter.description}</p> -->
       <slot /> <!-- Markdown content is injected here -->
