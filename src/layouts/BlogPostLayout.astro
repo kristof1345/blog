@@ -13,7 +13,7 @@ import '../style/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon-1.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter.title}</title>
   </head>
@@ -37,9 +37,8 @@ import '../style/global.css';
   main {
 		padding: 0px 10px;
 	}
-  * {
-  /* font-family: "JetBrains Mono", serif; */
 
-  font-family: "Roboto", serif;
-}
+  code {
+    font-family: "JetBrains Mono", serif;
+  }
 </style>
