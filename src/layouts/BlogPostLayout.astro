@@ -1,6 +1,7 @@
 ---
 const {frontmatter} = Astro.props;
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import '../style/global.css';
 ---
 
@@ -28,6 +29,8 @@ import '../style/global.css';
       <!-- <p>{frontmatter.description}</p> -->
       <slot /> <!-- Markdown content is injected here -->
     </main>
+
+    <Footer></Footer>
    </body>
   <!-- ... -->
 </html>
@@ -35,7 +38,7 @@ import '../style/global.css';
 
 <style>
   main {
-		padding: 0px 10px;
+		padding: 0px 0px;
 	}
 
   code {
@@ -44,5 +47,6 @@ import '../style/global.css';
 
   .date {
     font-size: 17px;
+    padding-bottom: 2px;
   }
 </style>
