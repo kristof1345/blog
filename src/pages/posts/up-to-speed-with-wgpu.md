@@ -18,7 +18,7 @@ That's another story for another day, the point is that I found it really hard t
 
 So... This post will aim to be your guide.
 
-Most of the code here will be pretty similar to what's [here][https://sotrh.github.io/learn-wgpu/beginner/tutorial1-window/#boring-i-know]. That's because that is the tutorial I used back in the day. I will aim to explain things a bit more though.
+Most of the code here will be pretty similar to what's [here](https://sotrh.github.io/learn-wgpu/beginner/tutorial1-window/#boring-i-know). That's because that is the tutorial I used back in the day. I will aim to explain things a bit more though.
 
 Let's get started by presenting the libraries we will be using:
 
@@ -71,7 +71,7 @@ Then we create our `event_loop` and `window`.
 
 I set the `control_flow` to `ControlFlow::Wait` which just basically means that the app can pause rendering making it a lot more CPU friendly(But, you should not do this if you are planning on doing a game).
 
-The next interesting thing is out `move |...|` [closure][https://doc.rust-lang.org/rust-by-example/fn/closures.html] inside of `run`. It makes sure that `window` will only live as long as out event loop is running.
+The next interesting thing is out `move |...|` [closure](https://doc.rust-lang.org/rust-by-example/fn/closures.html) inside of `run`. It makes sure that `window` will only live as long as out event loop is running.
 
 In `if window_id == window.id()` I just make sure that our `event` comes from the current window. And if someone closes the window we exit the `control_flow`.
 
@@ -135,7 +135,7 @@ Next is a surface.
 let surface = instance.create_surface(window).unwrap();
 ```
 
-https://docs.rs/wgpu/latest/wgpu/struct.Instance.html#method.create_surface
+[.create_surface](https://docs.rs/wgpu/latest/wgpu/struct.Instance.html#method.create_surface)
 
 Next we do an adapter.
 
