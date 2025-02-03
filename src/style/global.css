@@ -8,6 +8,7 @@ body {
   max-width: 720px;
   margin: auto;
   padding-bottom: 50px;
+  overflow-x: hidden;
 }
 
 code {
